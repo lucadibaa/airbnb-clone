@@ -27,7 +27,7 @@ const Header = ({ placeholder }) => {
     }
 
     return (
-        <header className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
+        <header className="fixed w-full top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
             {/* Logo */}
             <div onClick={() => router.push('/')} className="relative flex items-center h-8 cursor-pointer my-auto">
                 <Image

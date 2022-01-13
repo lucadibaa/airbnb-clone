@@ -17,7 +17,7 @@ const Search = ({ searchResults }) => {
         <div className="h-screen">
             <Header placeholder={`${location} | ${startDate} - ${endDate} | ${guests} guests`} />
 
-            <main className="flex">
+            <main className="flex mt-[92px]">
                 <section className="flex-grow pt-12 px-6">
                     <p className="text-xs">300+ Stays - {`${startDate} - ${endDate}`} - for {guests} guests</p>
                     <h1 className="font-semibold text-3xl mt-2 mb-4">Stays in {location}</h1>
@@ -48,7 +48,9 @@ const Search = ({ searchResults }) => {
                 </section>
 
                 <section className="hidden xl:inline-flex xl:min-w-[600px]">
-                    <Map searchResults={searchResults} />
+                    <div className="hidden fixed xl:inline-flex xl:min-w-[600px]">
+                        <Map searchResults={searchResults} />
+                    </div>
                 </section>
             </main>
 
